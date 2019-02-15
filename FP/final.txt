@@ -1,0 +1,89 @@
+TITLE:
+	Caroline Arndt
+	CSCI 261-E
+	Budget Application
+
+Problem Description:
+	This program helps users keep track of their money and where it goes. The user can add transactions, either income
+	or spending, to the budgeting app. The user can also see how they’re doing by printing a budget report to see how
+	well they are spending their money. The report includes the budget categories, the amount available in the category
+	based on the input income, how much the user has spent, and how much they have left. Once the user has finished
+	entering their transactions, they can see all the transactions the input in the budget report.txt file.
+
+PROGRAM DOCUMENTATION:
+	This Budget Application is simple to use. All the user needs to do is create a Budget object in main.cpp and it the
+	 program will run in its entirety; no need to call member functions.
+When the program is run, it will automatically prompt the user for their menu choice and display options as well as a
+percentage breakdown of the budget. There is already a Budget object in main.cpp called carlysBudget, so there is no
+ need to create another unless you desire to change the functionality of the program (changing the default constructor).
+ I would have liked to create another constructor that allows the users to input their desired categories and
+ percentages. I also would have liked to be able to print a full budget report in the .txt file in addition to the
+ transactions. I would have liked to include an input file that lets users upload a previous budget report and continue
+  to add to it.
+
+TESTS:
+1)	Enter 1 for Menu Choice.
+    a.	Enter 1 for Spending.
+    b.	Enter name: “Rent”
+    c.	Enter amount: 500
+    d.  Enter type: 1
+    e.	Enter 3 to end program
+    f.	Check budgetreport.txt
+    i.	Name of transaction: Rent           Type: Housing             Amount:  $500
+2)	Repeat step 1 and a-d.
+    a.	Enter 1 for Menu Choice.
+    b.	Enter 2 for Adding Income.
+    c.	Enter name: Work
+    d.	Enter amount: 3000
+    e.	Enter 3 to end program.
+    f.	Check budgetreport.txt
+        i.	Name of transaction: Work           Type: Income              Amount:  $3000
+         Name of transaction: Rent           Type: Housing             Amount:  $500
+3)	Repeat step 2 a-d.
+    a.	Enter 2 for Menu Choice.
+    b.	Budget report will be displayed.
+
+
+#1 Housing             Percent of Budget : %   35
+#2 Transportation      Percent of Budget : %   15
+#3 Food and Groceries  Percent of Budget : %   15
+#4 Debt Payments       Percent of Budget : %    8
+#5 Personal Spending   Percent of Budget : %    7
+#6 Savings             Percent of Budget : %   10
+#7 Clothing            Percent of Budget : %    5
+#8 Medical             Percent of Budget : %    5
+
+Total Income: $3000
+
+Housing              budget: $1050    spent: $500     remaining: $550
+Transportation       budget: $450     spent: $0       remaining: $450
+Food and Groceries   budget: $450     spent: $0       remaining: $450
+Debt Payments        budget: $240     spent: $0       remaining: $240
+Personal Spending    budget: $210     spent: $0       remaining: $210
+Savings              budget: $300     spent: $0       remaining: $300
+Clothing             budget: $150     spent: $0       remaining: $150
+Medical              budget: $150     spent: $0       remaining: $150
+Total Spent: $500
+Total Remaining: $2500
+
+4)	Enter -1 for Menu Choice.
+    a.	Receive a message that says “Thanks for stopping by!”
+5)	Enter 1 For Menu Choice.
+    a.	Enter invalid number 3 for “Spending or Adding?”
+    b.	Get message “Not an option. Try again later.”
+    c.	Get prompted back to menu choices, enter 103729 to escape.
+
+REFLECTIONS:
+	I learned that when doing a big project such as this, it is so important to spend time before any of the code
+	thinking about the functionality. It made it easier to think in levels of abstraction. What do I want the user to
+	input? What do I want output? Then, How can I implement this class? What functions will I need? What variables will
+	I need? Following this process of going from broad to narrow really helped. I think in the future I will write the
+	function Ideas I have on a piece of paper before I Implement them in a class, it can be a real hassle to go back
+	and change function names, return types, etc.
+
+I still am stuck on some file I/O things, like using file I/O in classes. I couldn’t get it to work in member functions,
+ so I implemented it in main.cpp. I want to learn how to be better with File I/O, because it makes programs
+  exponentially more useful! I’d love to learn how to use it in combination with a spreadsheet such as Excel. If I
+  could do this again, I’d love to use a combination of SFML and File I/O to make a user-friendly budget app. It was
+  challenging because I have some great budget apps on my phone that are way better than the one I created, and I think
+  I could have made it more user friendly if I had known more about SFML nd File I/O.

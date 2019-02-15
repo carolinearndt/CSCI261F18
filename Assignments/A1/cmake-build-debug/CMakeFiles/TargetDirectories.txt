@@ -1,0 +1,3 @@
+Z:/CSCI261F18/Set1/A1/cmake-build-debug/CMakeFiles/A1.dir
+Z:/CSCI261F18/Set1/A1/cmake-build-debug/CMakeFiles/edit_cache.dir
+Z:/CSCI261F18/Set1/A1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
